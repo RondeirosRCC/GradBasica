@@ -148,6 +148,9 @@
                                 <label>respostas</label>
                                 <textarea id="respostas_grad" name="respostas"></textarea>
                                 <br/>
+                                <label>graduacao</label>
+                                <textarea id="graduacao_tipo" name="graduacao">Básica</textarea>
+                                <br/>
                             </form>
                             <!--- botão de envia --->
                             <p><input class="btn btn-success" id="finalizar" value="Enviar" type="button"
@@ -591,7 +594,7 @@
 
             // salvar numa planilha cada resposta + status 
             $.ajax({
-                url: "https://api.apispreadsheets.com/data/wEu8qnz5b1thZphJ/",
+                url: "https://api.apispreadsheets.com/data/VnCWdevV1AjXw6Fq/",
                 type: "post",
                 data: $("#myForm").serializeArray(),
                 success: function () {},
