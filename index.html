@@ -233,7 +233,8 @@
                         <p id="resp_aprovado"></p>
                     </div>
                     <div class="card-footer"></div>
-                    <button class="btn btn-block btn-outline-success" onclick="window.close()">Fechar Graduação</button>
+                    <button class="btn btn-block btn-outline-success" onclick="
+                                                                               ()">Fechar Graduação</button>
                 </div>
             </div>
         </div>
@@ -255,7 +256,7 @@
                         <p id="resp_reprovado"></p>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-block btn-outline-primary" onclick="window.close()">Fechar Graduação</button>
+                        <button class="btn btn-block btn-outline-primary" onclick="fecharjanela()">Fechar Graduação</button>
                     </div>
                 </div>
             </div>
@@ -264,6 +265,10 @@
 </body>
 
 <script>
+    
+    function fecharjanela(){
+        window.close();   
+    }
     let informacoes = document.getElementById('informacoes')
     let questionario = document.getElementById('inicioQuestionario')
     let inicioCampoNome = document.getElementById('inicio')
