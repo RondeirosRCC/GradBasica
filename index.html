@@ -130,17 +130,17 @@
                                     <input type="radio" name="p6" value="D" id="D6">d) Somente a liderança poderá conceder permissão para uma licença de serviço.</br></p>
 
 
-                                <p><label><span class="badge badge-warning">07</span> - Cite pontos relevantes que podem impulsionar a sua promoção na subcompanhia.</label><br>
-                                    <input type="radio" name="p7" value="A" id="A7">a) Cumprimento de metas e ausência nas reuniões.</br>
-                                    <input type="radio" name="p7" value="B" id="B7">b) Descumprimento de meta e má conduta.</br>
-                                    <input type="radio" name="p7" value="C" id="C7">c) Cumprimento de metas, participação em subgrupos, envio de propostas na ouvidoria e conhecimento sobre a subcompanhia.</br>
-                                    <input type="radio" name="p7" value="D" id="D7">d) Tempo de carreira. </br></p>
+                                <p><label><span class="badge badge-warning">07</span> - Para quem o Curso Operacional Tático é aplicado?</label><br>
+                                    <input type="radio" name="p7" value="A" id="A7">a) Para os soldados.</br>
+                                    <input type="radio" name="p7" value="B" id="B7">b) Para os civis.</br>
+                                    <input type="radio" name="p7" value="C" id="C7">c) Para os Cabos/inspetores+.</br>
+                                    <input type="radio" name="p7" value="D" id="D7">d) Para os recrutas.</br></p>
 
-                                <p><label><span class="badge badge-warning">08</span> - Qual o principal documento da subcompanhia e qual o seu objetivo?</label><br>
-                                    <input type="radio" name="p8" value="A" id="A8">a) Código Disciplinar. Tem como objetivo instruir e disciplinar os membros da subcompanhia.</br>
-                                    <input type="radio" name="p8" value="B" id="B8">b) Código de Conduta Militar. Tem como objetivo instruir e disciplinar todos os policiais.</br>
-                                    <input type="radio" name="p8" value="C" id="C8">c) Regimento Interno. Tem como objetivo instruir e disciplinar os membros da subcompanhia.</br>
-                                    <input type="radio" name="p8" value="D" id="D8">d) Código Penal Militar. Tem como objetivo instruir e disciplinar todos os policiais.</br></p>
+                                <p><label><span class="badge badge-warning">08</span> - Quando ocorre a reunião geral da subcompanhia?</label><br>
+                                    <input type="radio" name="p8" value="A" id="A8">a) Quinzenalmente aos Sábados às 20h (Horário de Brasília)</br>
+                                    <input type="radio" name="p8" value="B" id="B8">b) Semanalmente aos Sábados às 20h (Horário de Brasília)</br>
+                                    <input type="radio" name="p8" value="C" id="C8">c) Quinzenalmente aos Domingos às 16h (Horário de Brasília)</br>
+                                    <input type="radio" name="p8" value="D" id="D8">d) Semanalmente aos Domingo às 16h (Horário de Brasília)</br></p>
                             </form>
                             <form id="myForm" hidden>
                                 <label>nick_enviar</label>
@@ -241,7 +241,7 @@
                         <span class="span">5)</span> D 
                         <span class="span">6)</span> B 
                         <span class="span">7)</span> C 
-                        <span class="span">8)</span> C 
+                        <span class="span">8)</span> A 
                         <br><br>
                         <span style="font-weight: bold ">Suas respostas:</span> <br>
                         <p id="resp_aprovado"></p>
@@ -447,7 +447,7 @@
             } else {
                 pontuacao = pontuacao
             }
-            if (document.getElementById('C8').checked) {
+            if (document.getElementById('A8').checked) {
                 pontuacao++
             } else {
                 pontuacao = pontuacao
