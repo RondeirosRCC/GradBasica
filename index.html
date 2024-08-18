@@ -86,11 +86,11 @@
                             <!--- Perguntas --->
                             <form action="">
                                 <p><label><span class="badge badge-warning">01</span> - Quantos por cento a Ronda de Recrutamento, Ronda de Divulgação, Ronda de Fechar Quartos, Ronda de Denunciar Infratores e Curso Operacional Tático agrega, respectivamente, na meta semanal?</label> <br>
-                                    <input type="radio" name="p1" value="A" id="A1">a) 50, 50, 25, 25 e 40.
+                                    <input type="radio" name="p1" value="A" id="A1">a) 50, 40, 20, 20 e 40.
                                     </br>
                                     <input type="radio" name="p1" value="B" id="B1">b) 30, 35, 40, 40 e 30.
                                     </br>
-                                    <input type="radio" name="p1" value="C" id="C1">c) 35, 40, 30, 30 e 35.
+                                    <input type="radio" name="p1" value="C" id="C1">c) 35, 40, 25, 25 e 35.
                                     </br>
                                     <input type="radio" name="p1" value="D" id="D1">d) 40, 30, 35, 35 e 40.
                                     </br></p>
@@ -136,11 +136,6 @@
                                     <input type="radio" name="p7" value="C" id="C7">c) Para os Cabos/Assessores+.</br>
                                     <input type="radio" name="p7" value="D" id="D7">d) Para os recrutas.</br></p>
 
-                                <p><label><span class="badge badge-warning">08</span> - Quando ocorre a reunião geral da subcompanhia?</label><br>
-                                    <input type="radio" name="p8" value="A" id="A8">a) Quinzenalmente aos Sábados às 20h (Horário de Brasília)</br>
-                                    <input type="radio" name="p8" value="B" id="B8">b) Semanalmente aos Sábados às 20h (Horário de Brasília)</br>
-                                    <input type="radio" name="p8" value="C" id="C8">c) Quinzenalmente aos Domingos às 16h (Horário de Brasília)</br>
-                                    <input type="radio" name="p8" value="D" id="D8">d) Semanalmente aos Domingo às 16h (Horário de Brasília)</br></p>
                             </form>
                             <form id="myForm" hidden>
                                 <label>nick_enviar</label>
@@ -241,7 +236,6 @@
                         <span class="span">5)</span> D 
                         <span class="span">6)</span> B 
                         <span class="span">7)</span> C 
-                        <span class="span">8)</span> A 
                         <br><br>
                         <span style="font-weight: bold ">Suas respostas:</span> <br>
                         <p id="resp_aprovado"></p>
@@ -398,12 +392,6 @@
 
         if (document.getElementById('A7').checked || document.getElementById('B7').checked || document.getElementById(
                 'C7').checked || document.getElementById('D7').checked) {
-            verificar = verificar
-        } else {
-            verificar++
-        }
-        if (document.getElementById('A8').checked || document.getElementById('B8').checked || document.getElementById(
-                'C8').checked || document.getElementById('D8').checked) {
             verificar = verificar
         } else {
             verificar++
